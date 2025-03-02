@@ -13,9 +13,15 @@ a {
 }
 
 nav {
-    background-color: #2d3864
+    background-color: #2d3864;
+    padding: 10px;
+    margin-bottom: 30px;
 }
 
-nav a {color: #E3E3E3}
+nav a {
+    color: #E3E3E3
+}
 
-nav a:hover {background-color: #FFD700}
+nav a:hover {
+    background-color: #FFD700
+}
