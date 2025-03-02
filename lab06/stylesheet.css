@@ -1,4 +1,6 @@
-body {font-family: 'Garamond'}
+body {
+    font-family: 'Garamond'}
+
 h1, h2 {
     color:brown;
     font-size:2em
