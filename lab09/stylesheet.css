@@ -1,0 +1,49 @@
+body {
+    color: #111111;
+    background-color:#EFEDE9 ;
+    font-family: 'Garamond'}
+    
+h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    color:brown;
+    font-size:2em;
+}
+
+a {
+    color: #007BFF
+}
+
+nav {
+    background-color: #2d3864;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #E3E3E3
+}
+
+nav a:hover {
+    background-color: #FFD700
+}
+
+img.skills-icon {
+    width:70px;
+    height:auto;
+}
+
+div.flexbox1 {
+    display: flex;
+}
+
+div.flexbox2 {
+
+}
+
+aside#aside {
+    background-color: #cce5ff; 
+    border-radius: 1em;
+}
