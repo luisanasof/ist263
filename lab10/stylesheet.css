@@ -62,4 +62,8 @@ aside#aside {
     background-color: #cce5ff; 
     border-radius: 1em;
     padding:20px;
-    } 
+    }
+    
+img.index-image {
+    max-width:100%;
+}
