@@ -1,0 +1,17 @@
+@media screen and (max-width:800px) {
+    h1 {
+        background-color:blue;
+    }
+    h2 {
+        display:none;
+    }
+}
+
+@media screen and (min-width:800px) {
+    h2 {
+        background-color:red;
+    }
+    h1 {
+        display:none;
+    }
+}
