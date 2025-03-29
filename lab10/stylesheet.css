@@ -67,3 +67,17 @@ aside#aside {
 img.index-image {
     max-width:100%;
 }
+
+/*media queries*/
+
+@media screen and (max-width:414px) {
+    nav a {
+        width:100%;
+        display:block;
+        padding:2%;
+}
+    span {
+        display: none;
+    }
+
+}
