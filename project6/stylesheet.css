@@ -1,0 +1,86 @@
+
+/*for bio so far:*/
+
+nav {
+ 
+    text-align:right;
+    
+}
+
+hr {
+    color:black;
+
+}
+
+body {
+    margin: 30px;
+    padding:20px;
+    background-color: #ffffff;
+    line-height: 1.4;
+}
+
+div.page-content {
+    margin:20px;
+}
+
+
+
+h2#bio{
+    font-weight: normal;
+}
+
+p#bio {
+    margin: 15px;
+}
+
+
+footer {
+    padding:30px;
+}
+
+div#copyright {
+    text-align:right;
+}
+
+@media screen and (min-width:415px) {
+    img#bio {
+        float: left;
+    }
+
+   footer {
+    clear: both;
+   }
+}
+
+@media screen and (max-width:414px) {
+    div.text-wrap-container {
+        display: flexbox;
+        columns: 2;
+    }
+    img#bio {
+        clear:both;
+        display:block;
+        text-align: center;
+    }
+}
+
+/*
+@media screen and (max-width:800px) {
+    h1 {
+        background-color:blue;
+    }
+    h2 {
+        display:none;
+    }
+}
+
+@media screen and (min-width:800px) {
+    h2 {
+        background-color:red;
+    }
+    h1 {
+        display:none;
+    }
+}
+
+*/
