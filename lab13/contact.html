@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Luisana Ortiz Contact Information </title>
+        <link rel="stylesheet" href="../lab13/stylesheet.css">
+
+        <style>
+            .row1 {
+                float: left; 
+                display: flex;
+                background-color: #cce5ff; border-radius: 1em;
+                margin-top:20px;
+                margin-bottom:20px;
+            }
+            .row1 div {
+
+                padding-left:30px;
+                padding-right:30px;
+            }
+
+            .email-and-linkedin {
+                            order:2;
+                            margin-top:100px;
+                        }
+
+            .clear {clear:both}
+
+            .row2 {
+            float: left; 
+            display: flex;
+            background-color: #cce5ff; border-radius: 1em;
+            margin-top:20px;
+            margin-bottom:20px;
+            flex-wrap: wrap;
+            }
+            /*
+             .contact-form {
+                order:1;
+                margin: 30px;}
+            .map {
+                order:2;
+            } */
+
+            .row2 div {
+            padding-left:30px;
+            padding-right:30px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="https://luisanasof.github.io/ist263/lab13/">Home</a><span> |</span>
+                <a href="https://luisanasof.github.io/ist263/lab13/contact">Contact</a><span> |</span>
+                <a href="https://luisanasof.github.io/ist263/lab13/skills">Skills</a>
+            </nav>
+            <a href="#main" class="skip">Skip to main content</a>
+        </header>
+        <main id="main">
+            <h1>Contact</h1>
+
+            <section>
+                <div class="row1">
+                    <div class="address">
+                        <p>Luisana Ortiz
+                        <br>Syracuse University
+                        <br>343 Hinds Hall
+                        <br>Syracuse, NY 13210
+                        </p>
+                    </div>
+                    <div class="email-and-linkedin">
+                            <p><a href="mailto:lsortiz@syr.edu">Luisana's Email</a></p>
+                    
+                            <img src="../images/linked-logo/logo-sized.png" alt="LinkedIn bug logo" width="42" height="42">
+                            <a href="https://www.linkedin.com/in/luisanaortiz/" target="_blank">My LinkedIn profile</a>
+                            <br>
+                            <br>
+                    </div> 
+                </div>
+            </section>
+
+            <div class="clear"></div>
+
+            <section>
+                <div class="row2">
+
+                    <div class="contact-form">
+                        <h3>Let's Connect!</h3>
+                        <form action="https://formspree.io/f/xqaelgpr" method="post">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name"><br>
+                            <label for="purpose-select">Purpose of Contact:</label>
+                            <select name="purpose-select" id="purpose-select">
+                                <option value="Professional">Professional</option>
+                                <option value="Personal">Personal</option>
+                                <option value="Other">Other</option>
+                            </select><br><br>
+                            <textarea id="textbox" name="textbox" rows="6" cols="50"></textarea><br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+
+                    <div class="map">
+                        <p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1525367589275!2d-76.13336799999999!3d43.038222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fca0f3225%3A0xb7e0bcbf2e1292f6!2sHinds%20Hall%2C%20343%20Hinds%20Hall%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1738470547215!5m2!1sen!2sus" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>        

@@ -1,0 +1,83 @@
+body {
+    color: #111111;
+    background-color:#EFEDE9 ;
+    font-family: 'Garamond'}
+
+div.page-content {
+    margin:2.5%;
+}
+
+p {
+    margin: 20px;
+    text-align: center-left;
+}
+
+label {
+    text-align: center;
+}
+
+h1, h2 {
+    color:brown;
+    font-size:2em;
+    text-align: center;
+}
+
+a {
+    color: #007BFF
+}
+
+nav {
+    background-color: #2d3864;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #E3E3E3
+}
+
+nav a:hover {
+    background-color: #FFD700
+}
+
+img.skills-icon {
+    width:70px;
+    height:auto;
+}
+
+div.flexbox1 {
+    display: flex;
+    flex: 75%;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+div.flexbox2 {
+    display: flex;
+    flex: 25%;
+    margin:20px;
+}
+
+aside#aside {
+    background-color: #cce5ff; 
+    border-radius: 1em;
+    padding:20px;
+    }
+    
+img.index-image {
+    max-width:100%;
+}
+
+/*media queries*/
+
+@media screen and (max-width:414px) {
+    nav a {
+        width:100%;
+        display:block;
+        padding:2%;
+}
+    span {
+        display: none;
+    }
+
+}
