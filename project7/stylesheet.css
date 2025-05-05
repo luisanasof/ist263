@@ -2,9 +2,8 @@
 /*for bio so far:*/
 
 nav {
- 
     text-align:right;
-    
+    font-size: 24px;
 }
 
 hr {
@@ -14,39 +13,81 @@ hr {
 
 body {
     margin: 30px;
-    padding:20px;
+    padding: 20px;
     background-color: #ffffff;
     line-height: 1.4;
+    font-family: "Newsreader";
+    font-weight: 400;
+    font-style: normal;
 }
+
 
 div.page-content {
     margin:20px;
 }
 
 
-
-h2#bio{
-    font-weight: normal;
-}
-
-
 .flexbox-img {
     display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
-p#bio {
-    margin: 15px;
+.flexbox-img img {
+    object-fit: contain;
+    flex-shrink: 0;
+    margin:1em;
 }
 
-/*sshould neveer have ids for two diifferent things*/
+.text-wrap-container {
+    flex: 1;
+    min-width: 200px;
+    margin: 0.5em;
+}
+
+h1 {
+    font-weight:600;
+    font-size:42.56px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+p.bio::first-letter {
+    float: left;
+    font-size: 3em;
+    line-height: 1;
+    padding-right: 0.1em;
+    font-weight: bold;
+  }
+
+p {
+    margin: 1em;
+    font-size: 24px;
+}
+
+ul {
+    font-size: 18pt;
+}
+
+/*sshould never have ids for two diifferent things*/
 
 footer {
-    padding:30px;
+    margin:30px;
 }
 
 div#copyright {
     text-align:right;
 }
+
+
+
+
+
+
+
 
 
 /*padding on the text or margin on the image */
