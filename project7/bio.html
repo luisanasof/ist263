@@ -8,25 +8,31 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1f1ba02825.js" crossorigin="anonymous"></script>
     </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="wordmark-fixed.png" alt="Workmark with fullname as site logo"></a>
-        <!--need to export from indd for better quality + decrease size-->
-        <nav>
-            <a href="bio.html">About</a> |
-            <a href="portfolio.html">Portfolio</a> |
-            <a href="contact.html">Contact</a>
-            <hr>
-        </nav>
-    <br>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="wordmark-fixed.png" alt="Workmark with fullname as site logo"></a>
+            </div>
+            <!--need to export from indd for better quality + decrease size-->
+            <nav>
+                <a href="bio.html">About</a> |
+                <a href="portfolio.html">Portfolio</a> |
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <hr>
     </header>
 
+
+    <main>
     <div class="page-content">
         <div class="intro">
-            <h1 class="bio">Hi, I'm Luisana! Welcome to my website.</h1>
-            <h2 class="bio">As a fourth-year student at Syracuse University studying journalism and data analytics, I'm interested in working at the intersection of the two fields, with a particular focus on data visualizations, data journalism and social science research.</h2>
+            <h1 class="bio"><span>Hi, I'm Luisana!</span></h1>
+            <h2 class="bio">As a fourth-year student at Syracuse University studying <span>journalism and data analytics,</span> I'm interested in working at the intersection of the two fields, with a particular focus on <span>data visualizations, data journalism and social science research.</span></h2>
             <br>
         </div>
 
@@ -51,13 +57,19 @@
             </div>
         </div>
     </div>
-
+</main>
     <footer><!--social media and copyright go here--> 
         <hr>
-        <div id="socials">
-        </div>
-        <div id="copyright">
-            <p>&copy;2025</p>
+        <div id="footer-container">
+            <div id="socials">
+                <a href="https://www.linkedin.com/in/luisanaortiz"> 
+                    <i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i> 
+                </a>
+            </div>
+
+            <div id="copyright">
+                <p>&copy;2025</p>
+            </div>
         </div>
     </footer>
 </body>

@@ -8,59 +8,70 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1f1ba02825.js" crossorigin="anonymous"></script>
     </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="wordmark-fixed.png" alt="Workmark with fullname as site logo"></a>
-        <!--need to export from indd for better quality + decrease size-->
-    <nav>
-        <a href="bio.html">About</a> |
-        <a href="portfolio.html">Portfolio</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="wordmark-fixed.png" alt="Workmark with fullname as site logo"></a>
+            </div>
+            <!--need to export from indd for better quality + decrease size-->
+            <nav>
+                <a href="bio.html">About</a> |
+                <a href="portfolio.html">Portfolio</a> |
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <hr>
     </header>
 
-<div class="page-content">
-    <h1>Send me an email!</h1>
-    <form action="">
-        <label for="fname">First Name</label><br>
-        <input type="text" id="fname" name="fname"><br>
+    <main>
 
-        <label for="lname">Last Name</label><br>
-        <input type="text" id="lname" name="fname"><br>
+    <div class="page-content">
+        <h1>Send me an email!</h1>
+        <form class="contact" action="">
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname"><br>
 
-        <label for="contact-reason">Reason for Contact</label><br>
-        <select name="contact-reason" id="contact-reason">
-            <option value="work">Work</option>
-            <option value="personal">Personal</option>
-            <option value="other">Other</option>
-            </select><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="fname"><br>
 
-        <label for="subject">Subject</label><br>
-        <input type="text" id="contact-reason" name="contact-reason"><br>
+            <label for="contact-reason">Reason for Contact</label><br>
+            <select name="contact-reason-dropdown" id="contact-reason">
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="other">Other</option>
+                </select><br>
 
-        <label for="message">Message</label><br>
-        <textarea id="message" name="message"></textarea><br><br>
+            <label for="subject">Subject</label><br>
+            <input type="text" id="contact-reason" name="contact-reason"><br>
 
-        <input type="submit">
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
 
+            <input type="submit">
 
-        <!--First name, Last name (float)
-        reason for contact (dropdown)
-        subject (shprt textbox)
-        messsage (large textbook) -->
-
-    </form>
-</div>
-
+            <!--First name, Last name (float)
+            reason for contact (dropdown)
+            subject (shprt textbox)
+            messsage (large textbook) -->
+        </form>
+    </div>
+    </main>
     <footer><!--social media and copyright go here--> 
         <hr>
-        <div id="socials">
-        </div>
+        <div id="footer-container">
+            <div id="socials">
+                <a href="https://www.linkedin.com/in/luisanaortiz"> 
+                    <i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i> 
+                </a>
+            </div>
 
-        <div id="copyright">
-            <p>&copy;2025</p>
+            <div id="copyright">
+                <p>&copy;2025</p>
+            </div>
         </div>
     </footer>
 </body>

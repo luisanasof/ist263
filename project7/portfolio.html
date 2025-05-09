@@ -12,38 +12,90 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1f1ba02825.js" crossorigin="anonymous"></script>
     </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="wordmark-fixed.png" alt="Workmark with fullname as site logo"></a>
-        <!--need to export from indd for better quality + decrease size-->
-        <nav>
-            <a href="bio.html">About</a> |
-            <a href="portfolio.html">Portfolio</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <div class="page-content">
-        <h1>Selected Works</h1>
-
-            <div id="links">
-                <h2>Journalism</h2>
-                <h2>Writing and Essays></h2>
-                <h2>Data Analysis and Visualizations</h2>
-                <h2>Research</h2>
-                <h2>Multimedia Work</h2>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="wordmark-fixed.png" alt="Workmark with fullname as site logo"></a>
             </div>
+            <!--need to export from indd for better quality + decrease size-->
+            <nav>
+                <a href="bio.html">About</a> |
+                <a href="portfolio.html">Portfolio</a> |
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <hr>
+    </header>
+
+<main>
+    <div class="page-content-portfolio">
+        <div class="page-title-container">
+            <h1>Selected Works</h1>
+        </div>
+
+        <div class="portfolio-sections">
+
+            <details id="Journalism">
+                <summary>Journalism</summary>
+                    <div class="portfolio-links">
+                        <ul>
+                            <li><a href="https://dailyorange.com/2024/04/syracuse-immigrant-refugee-defense-network/">"Syracuse Immigrant and Refugee Defense Network serves as an ‘ally’ for community”</a></li>
+                            <li><a href="https://dailyorange.com/2022/12/architecture-students-are-prioritizing-mental-health/">"Overworked, sleep-deprived architecture students are prioritizing mental health"</a></li>
+                            <li><a href="https://dailyorange.com/2023/11/united-syracuse-discusses-parking-wage-concerns-wednesday-meeting/">"United Syracuse discusses parking, wage concerns at Wednesday’s meeting"</a></li>
+                        </ul>
+                    </div>
+            </details>
+
+            <details id="Writing-and-Essays">
+                <summary>Writing and Essays</summary>
+                    <div class="portfolio-links">
+                    </div>
+            </details> 
+
+            <details id="Data-Analysis-and-Visualizations">
+                <summary>Data Analysis and Visualizations</summary>
+                    <div class="portfolio-links">
+                    </div>
+            </details>
+
+            <details id="Research">
+                <summary>Research</summary>
+                    <div class="portfolio-links">
+                        <ul>
+                            <li><a href="https://idjc.syracuse.edu/2024-election-graph-project/">ElectionGraph</a></li>
+                        </ul>
+                    </div>
+            </details>
+
+            <details id="Multimedia-Work">
+                <summary>Multimedia Work</summary>
+                    <div class="portfolio-links">
+                        <ul>
+                            <li><a href="https://video.syr.edu/media/t/1_ruo1e62h">"Creating My Own Space"</a></li>
+                        </ul>
+                    </div>
+            </details>
+        </div>
     </div>
+</main>
 
     <footer><!--social media and copyright go here--> 
         <hr>
+        <div id="footer-container">
             <div id="socials">
+                <a href="https://www.linkedin.com/in/luisanaortiz"> 
+                    <i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i> 
+                </a>
             </div>
 
             <div id="copyright">
                 <p>&copy;2025</p>
             </div>
+        </div>
     </footer>
 </body>
 </html>

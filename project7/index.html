@@ -8,32 +8,68 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1f1ba02825.js" crossorigin="anonymous"></script>
     </head>
 
 <body>
-    <header>
-        <a href="index.html"><img src="wordmark-fixed.png" alt="Workmark with fullname as site logo"></a>
-        <!--need to export from indd for better quality + decrease size-->
-    <nav>
-        <a href="bio.html">About</a> |
-        <a href="portfolio.html">Portfolio</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
-    </header>
+        <header>
+            <div class="header-container">
+                <div class="logo-container">
+                    <a href="index.html"><img src="wordmark-fixed.png" alt="Workmark with fullname as site logo"></a>
+                </div>
+                <!--need to export from indd for better quality + decrease size-->
+                <nav>
+                    <a href="bio.html">About</a> |
+                    <a href="portfolio.html">Portfolio</a> |
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <hr>
+        </header>
 
-    <div class="page-content">
-        <h1>Welcome to my page!</h1>
-        <p>All things storytelling, information and research. </p>
-        <img src="Headshot_NH_glasses 1.png" alt="Professional Self-portrait">
-    </div>
+            <main id="home">
+                <section id="intro-home">
+                    <h1>Welcome to my page!</h1>
+                    <h2>All things <span>storytelling</span>, <span>information</span> and <span> research.</span></h2>
+                    <div class="flexbox-img">
+                        <img src="Headshot_NH_glasses 1.png" alt="close-up headshot">
+                    </div>
+                </section>
 
-    <footer><!--social media and copyright go here--> 
-        <hr>
-        <div id="socials">
-        </div>
-        <div id="copyright">
-            <p>&copy;2025</p>
-        </div>
-    </footer>
+                <section class="portfolio-home">
+                    <h3>Check out my recent work:</h3>
+
+                        <div class="portfolio-grid">
+                            
+                            <div class="portfolio-item">
+                                <img src="Headshot_NH_glasses 1.png" alt="portfolio1">
+                            </div>
+
+                            <div class="portfolio-item">
+                                <img src="bio-pic.png" alt="portfolio1">
+                            </div>
+                            <!---
+                            <div class="portfolio-item"></div>
+                            <div class="portfolio-item"></div>
+                            <div class="portfolio-item"></div>
+                            !-->
+                        </div>
+                </section>
+            </main>
+
+        <footer><!--social media and copyright go here--> 
+            <hr>
+            <div id="footer-container">
+                    <div id="socials">
+                        <a href="https://www.linkedin.com/in/luisanaortiz"> 
+                            <i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i> 
+                        </a>
+                    </div>
+
+                    <div id="copyright">
+                        <p>&copy;2025</p>
+                    </div>
+            </div>
+        </footer>
 </body>
 </html>

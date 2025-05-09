@@ -1,35 +1,34 @@
 
-/*for bio so far:*/
-
-nav {
-    text-align:right;
-    font-size: 24px;
-}
 
 hr {
     color:black;
-
 }
 
 body {
-    margin: 30px;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     line-height: 1.4;
     font-family: "Newsreader";
     font-weight: 400;
     font-style: normal;
+    min-height: 100vh;
+    margin: 5em;
 }
 
+/*main*/
+
+main {
+    margin-top: 2em;
+}
 
 div.page-content {
     margin:20px;
 }
 
-
 .flexbox-img {
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     align-items: flex-start;
 }
 
@@ -55,13 +54,10 @@ h2 {
     font-size: 32px;
 }
 
-p.bio::first-letter {
-    float: left;
-    font-size: 3em;
-    line-height: 1;
-    padding-right: 0.1em;
-    font-weight: bold;
-  }
+h3 {
+    font-weight:500;
+    font-size:24px;
+}
 
 p {
     margin: 1em;
@@ -72,22 +68,176 @@ ul {
     font-size: 18pt;
 }
 
-/*sshould never have ids for two diifferent things*/
-
-footer {
-    margin:30px;
+span {
+    color: #7B3F00;
 }
 
-div#copyright {
+/*header*/
+
+
+.header-container {
+    display: flex;
+    margin-top: 0.25em;
+    align-items: center;
+}
+
+.logo-container {
+    flex:2;
+}
+
+
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+nav a {
+    color: black;
+    font-weight:500;
+    font-size: 24px;
+}
+
+nav a:hover{
+    color: #7B3F00;
+
+}
+
+/*footer*/
+
+footer {
+    margin-top:15em;
+    justify-content: flex-end;
+    position:static;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items:center;
+}
+
+#socials {
+    text-align: left;
+}
+
+#copyright p {
+    font-size:large;
     text-align:right;
 }
 
+/*home*/
+
+main#home {
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex:1;
+}
+
+section#intro-home h1 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+#intro-home h2 {
+    text-align: center;
+}
+
+section#intro-home {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.portfolio-home {
+    margin: 2em;
+    margin-bottom: 20em;
+
+}
+.portfolio-grid {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.portfolio-item {
+    flex: 1;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+
+.portfolio-item:hover {
+    transform: scale(1.1);
+  }
+
+/*about*/
+p.bio::first-letter {
+    float: left;
+    font-size: 2.5em;
+    line-height: 1;
+    padding-right: 0.1em;
+    font-weight: bold;
+  }
+
+/*portfolio*/
+
+.page-title-container {
+    text-decoration: underline;
+    color: #7B3F00;
+}
+
+.page-content-portfolio {
+    text-align: center;
+    margin: 1em;
+}
+
+.portfolio-sections {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;     
+    align-items: flex-start;    
+    max-width: fit-content;  
+    margin: auto;               
+}
+
+.portfolio-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;     
+    align-items: flex-start;    
+    max-width: fit-content;  
+    margin: auto;
+    font-size: 0.5em;
+    font-style: italic;
+}
+
+details > summary {
+    font-size: 30px;
+    margin:0.5em;
+}
 
 
+/*contact*/
 
+form {
+    font-size: 24px;
+}
 
+input {
+    font-family: "Newsreader";
+    font-size: 24px;
+}
 
+select option {
+    font-size: 24px;
+}
 
+/*edit this w/ js?*/
 
 
 /*padding on the text or margin on the image */
@@ -104,38 +254,3 @@ div#copyright {
    }
 }
 
-
-@media screen and (max-width:414px) {
-    div.text-wrap-container {
-        display: flexbox;
-        columns: 2;
-    }
-    img#bio {
-        clear:both;
-        display:block;
-        text-align: center;
-    }
-}
-
-/* commenting out for now
-
-
-@media screen and (max-width:800px) {
-    h1 {
-        background-color:blue;
-    }
-    h2 {
-        display:none;
-    }
-}
-
-@media screen and (min-width:800px) {
-    h2 {
-        background-color:red;
-    }
-    h1 {
-        display:none;
-    }
-}
-
-*/
